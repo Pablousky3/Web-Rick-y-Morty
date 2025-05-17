@@ -1,0 +1,139 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0b0c10;
+  color: #fff;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.carousel-item h3 {
+  margin-top: 1rem;
+  color: #00ffcc;
+}
+
+.btn-success {
+  font-size: 1.2rem;
+  padding: 0.75rem 2rem;
+}
+
+
+/* Selector de planetas-------------------------------------------------------------------------------------------------------------------------*/
+
+.mapas {
+    background-color:rgb(0, 2, 27);
+    margin: 0;
+    padding: 20px;
+}
+
+.h1mapa {
+    font-weight: 100;
+    font-family: fantasy;
+    color: white;
+    padding: 20px 0;
+}
+
+.caja-mapa {
+    height: 80vh;
+    position: relative;
+}
+
+.big-map {
+    background-color: #d4eb00;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.big-map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity:1;
+}
+
+/* Pines y cajas de información */
+[class^="cajafoto"] {
+    background-color: #000;
+    position: absolute;
+    padding: 20px;
+    width: 400px;
+    opacity: 0;
+    border-radius: 8px;
+    color: white;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 99999;
+}
+
+.pin {
+    font-size: 2em;
+    position: absolute;
+    cursor: pointer;
+    color: #fdcb17 !important;
+    transition: transform 0.2s;
+    z-index: 200;
+}
+
+.pin:hover {
+    transform: scale(1.1);
+}
+
+[class^="Foto"] img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+[class^="Texto"] {
+    margin: 0;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+/* Posicionamiento pines */
+.PinCanada { right: 65vw; top: 35vh; }
+.PinEstadosUnidos { right: 55vw; top: 40vh; }
+.PinBrasil { right: 50vw; top: 59vh; }
+.PinJapon { right: 18vw; top: 42vh; }
+.PinAustralia { right: 40vw; bottom: 32vh; }
+.PinChina { right: 25vw; top: 43vh; }
+.PinEspana { right: 65vw; top: 39vh; }
+.PinInglaterra { right: 51.5vw; top: 35.5vh; }
+.PinArgentina { left: 31vw; bottom: 30vh; }
+
+/* Posicionamiento cajas */
+.cajafotoCanada { right: 60vw; bottom: 30vh; }
+.cajafotoEstadosUnidos { right: 45vw; bottom: 35vh; }
+.cajafotoBrasil { right: 50vw; bottom: 15vh; }
+.cajafotoJapon { right: 10vw; bottom: 35vh; }
+.cajafotoAustralia { right: 8vw; bottom: 10vh; }
+.cajafotoChina { right: 20vw; bottom: 40vh; }
+.cajafotoEspana { right: 29vw; bottom: 18vh; }
+.cajafotoInglaterra { right: 35vw; bottom: 25vh; }
+.cajafotoArgentina { right: 40vw; bottom: 10vh; }
+
+/* Efectos hover */
+.PinCanada:hover ~ .cajafotoCanada,
+.PinEstadosUnidos:hover ~ .cajafotoEstadosUnidos,
+.PinBrasil:hover ~ .cajafotoBrasil,
+.PinJapon:hover ~ .cajafotoJapon,
+.PinAustralia:hover ~ .cajafotoAustralia,
+.PinChina:hover ~ .cajafotoChina,
+.PinEspana:hover ~ .cajafotoEspana,
+.PinInglaterra:hover ~ .cajafotoInglaterra,
+.PinArgentina:hover ~ .cajafotoArgentina {
+    opacity: 0.8;
+}
+
+/* Animación Font Awesome */
+ .fa-beat-fade {
+    --fa-animation-duration: 2s;
+} 
+
+.fa-solid.fa-location-pin.fa-beat-fade{
+    animation-iteration-count: 0;
+}
