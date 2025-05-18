@@ -226,26 +226,26 @@ body {
 }
 
 /* --- POSICIONAMIENTO PINES --- */
-.PinCanada { right: 65vw; top: 35vh; }
-.PinEstadosUnidos { right: 55vw; top: 40vh; }
-.PinBrasil { right: 50vw; top: 59vh; }
-.PinJapon { right: 18vw; top: 42vh; }
-.PinAustralia { right: 40vw; bottom: 32vh; }
-.PinChina { right: 25vw; top: 43vh; }
-.PinEspana { right: 65vw; top: 39vh; }
-.PinInglaterra { right: 51.5vw; top: 35.5vh; }
-.PinArgentina { left: 31vw; bottom: 30vh; }
+.PinCanada { right: 75vw; top: 20vh; }
+.PinEstadosUnidos { right: 85vw; top: 40vh; }
+.PinBrasil { right: 70vw; top: 60vh; }
+.PinJapon { right: 44vw; top: 62vh; }
+.PinAustralia { right: 10vw; bottom: 25vh; }
+.PinChina { right: 25vw; top: 33vh; }
+.PinEspana { left: 38vw; bottom: 55vh; }
+.PinInglaterra { right: 45vw; top: 15vh; }
+ .PinArgentina { right: 25vw; top: 20vh; } 
 
 /* --- POSICIONAMIENTO CAJAS --- */
-.cajafotoCanada { right: 60vw; bottom: 30vh; }
-.cajafotoEstadosUnidos { right: 45vw; bottom: 35vh; }
-.cajafotoBrasil { right: 50vw; bottom: 15vh; }
-.cajafotoJapon { right: 10vw; bottom: 35vh; }
-.cajafotoAustralia { right: 8vw; bottom: 10vh; }
-.cajafotoChina { right: 20vw; bottom: 40vh; }
-.cajafotoEspana { right: 29vw; bottom: 18vh; }
-.cajafotoInglaterra { right: 35vw; bottom: 25vh; }
-.cajafotoArgentina { right: 40vw; bottom: 10vh; }
+.cajafotoCanada { right: 45vw; bottom: 30vh; }
+.cajafotoEstadosUnidos { right: 55vw; bottom: 30vh; }
+.cajafotoBrasil { right: 38vw; bottom: 12vh; }
+.cajafotoJapon { right: 50vw; bottom: 10vh; }
+.cajafotoAustralia { right: 20vw; bottom: 15vh; }
+.cajafotoChina { right: 30vw; bottom: 25vh; }
+.cajafotoEspana { right: 25vw; bottom: 30vh; }
+.cajafotoInglaterra { right: 52vw; bottom: 25vh; }
+.cajafotoArgentina {  right: 32vw; bottom: 10vh; }
 
 /* Animación Font Awesome */
  .fa-beat-fade {
