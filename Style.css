@@ -1,157 +1,231 @@
+/* --- BASE Y BODY --- */
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #0d253f; /* azul oscuro, estilo Rick (más oscuro que antes) */
-  color: #e0f7fa; /* texto claro base */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #121212; /* fondo negro intenso para contraste neón */
+  color: #b7f0ad; /* verde claro neón suave (tipo Rick) */
+  margin: 0;
+  padding: 0;
 }
 
-/* Colores para los nombres de personajes */
+/* --- NOMBRES DE PERSONAJES --- */
 .name-rick {
-  color: #4fc3f7; /* Rick - azul claro */
-  font-weight: 700;
+  color: #45f3a3; /* verde neón brillante Rick */
+  font-weight: 900;
+  text-shadow: 0 0 10px #45f3a3, 0 0 30px #45f3a3;
+  letter-spacing: 1.3px;
 }
 
 .name-morty {
-  color: #ffeb3b; /* Morty - amarillo */
-  font-weight: 700;
-  text-shadow: 0 0 5px #ffeb3b;
+  color: #fff244; /* amarillo vibrante Morty */
+  font-weight: 900;
+  text-shadow: 0 0 12px #fff244, 0 0 30px #fff244;
+  letter-spacing: 1.2px;
 }
 
 .name-summer {
-  color: #f48fb1; /* Summer - rosa */
-  font-weight: 700;
+  color: #da55ff; /* morado vibrante Summer */
+  font-weight: 900;
+  text-shadow: 0 0 12px #da55ff, 0 0 30px #da55ff;
+  letter-spacing: 1.2px;
 }
 
 .name-jerry {
-  color: #81c784; /* Jerry - verde */
-  font-weight: 700;
+  color: #ff6e6e; /* rojo suave Jerry */
+  font-weight: 900;
+  text-shadow: 0 0 10px #ff6e6e, 0 0 25px #ff6e6e;
+  letter-spacing: 1.1px;
 }
 
 .name-beth {
-  color: #e57373; /* Beth - rojo */
-  font-weight: 700;
+  color: #00d2ff; /* azul eléctrico Beth */
+  font-weight: 900;
+  text-shadow: 0 0 10px #00d2ff, 0 0 30px #00d2ff;
+  letter-spacing: 1.2px;
 }
 
-/* Links de navegación usando clases Bootstrap */
+/* --- NAV LINKS --- */
 .nav-link {
-  color: #ffeb3b; /* Morty - amarillo */
+  color: #fff244;
+  font-weight: 700;
   transition: color 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
 }
 
 .nav-link:hover {
-  color: #f48fb1; /* Summer - rosa */
-  text-decoration: underline;
+  color: #da55ff;
+  text-decoration: underline wavy #da55ff;
 }
 
-/* Carousel encabezados (usamos color Rick) */
-.carousel-item h3 {
-  margin-top: 1rem;
-  color: #4fc3f7; /* Rick - azul claro */
-  text-shadow: 0 0 8px #4fc3f7;
+/* --- CAROUSEL GENERAL --- */
+.carousel {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 40px 8px #45f3a3;
+  background: #1a1a1a;
+  padding: 15px;
+  margin-bottom: 3rem;
 }
 
-/* Botones éxito personalizados con Jerry (verde) */
-.btn-success {
-  font-size: 1.2rem;
-  padding: 0.75rem 2rem;
-  background-color: #81c784; /* Jerry - verde */
-  border: none;
-  box-shadow: 0 0 12px #81c784;
+/* --- CAROUSEL CONTROLS --- */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(255, 242, 68, 0.7); /* amarillo Morty */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  filter: drop-shadow(0 0 5px #fff244);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: #da55ff; /* morado Summer */
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 15px #da55ff);
+}
+
+/* --- CAROUSEL INDICATORS --- */
+.carousel-indicators [data-bs-target] {
+  background-color: #fff244;
+  opacity: 0.8;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.btn-success:hover {
-  background-color: #a5d6a7; /* verde claro Jerry */
-  box-shadow: 0 0 20px #a5d6a7;
+.carousel-indicators .active {
+  background-color: #da55ff;
+  box-shadow: 0 0 15px #da55ff;
 }
 
-/* Selector de planetas */
+/* --- CAROUSEL TITULOS --- */
+.carousel-item h3 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #45f3a3;
+  text-shadow: 0 0 20px #45f3a3, 0 0 40px #45f3a3;
+  margin-top: 0.8rem;
+  letter-spacing: 2px;
+}
+
+/* --- BOTONES --- */
+.btn-success {
+  background: linear-gradient(135deg, #45f3a3, #00ffb9);
+  border: none;
+  font-weight: 900;
+  font-size: 1.2rem;
+  padding: 0.8rem 2.5rem;
+  box-shadow: 0 0 25px #00ffb9;
+  transition: box-shadow 0.4s ease, background 0.4s ease;
+}
+
+.btn-success:hover {
+  background: linear-gradient(135deg, #00ffb9, #45f3a3);
+  box-shadow: 0 0 40px #00ffb9;
+}
+
+/* --- SECCION MAPAS --- */
 .mapas {
-  background-color: #2e3e50; /* azul grisáceo, más oscuro */
-  margin: 0;
-  padding: 20px;
+  background: #000000cc; /* negro con transparencia para brillo */
+  padding: 2rem 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 30px #da55ffcc;
 }
 
 .h1mapa {
-  font-weight: 100;
-  font-family: fantasy;
-  color: #ffeb3b; /* Morty - amarillo */
-  padding: 20px 0;
-  text-shadow: 0 0 10px #ffeb3b;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #fff244;
+  text-shadow: 0 0 15px #fff244;
+  margin-bottom: 1rem;
 }
 
 .caja-mapa {
-  height: 80vh;
   position: relative;
+  height: 80vh;
 }
 
 .big-map {
-  background-color: #7b4f49; /* marrón claro con toque rojo Beth */
-  height: 80vh;
-  position: relative;
+  height: 100%;
+  border-radius: 12px;
   overflow: hidden;
-  filter: brightness(1);
-  border-radius: 8px;
+  filter: brightness(0.9);
+  box-shadow: 0 0 25px #45f3a3;
+  background: linear-gradient(135deg, #2e003e, #000000);
 }
 
 .big-map img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 1;
-  filter: drop-shadow(0 0 6px #81c784); /* sombra verde Jerry */
+  filter: drop-shadow(0 0 15px #fff244);
 }
 
-/* Pines y cajas de información */
-[class^="cajafoto"] {
-  background-color: rgba(255, 235, 59, 0.15); /* translúcido Morty */
-  position: absolute;
-  padding: 20px;
-  width: 400px;
-  opacity: 0;
-  border-radius: 8px;
-  color: #0d253f; /* azul oscuro texto */
-  transition: opacity 0.3s ease;
-  pointer-events: none;
-  z-index: 99999;
-  box-shadow: 0 0 10px #ffeb3b; /* sombra Morty */
-  backdrop-filter: blur(6px);
-}
-
-/* Pines con colores Rick y sombras neón */
+/* --- PINES DE LOCALIZACION --- */
 .pin {
-  font-size: 2em;
-  position: absolute;
+  font-size: 2.5em;
+  color: #00ffcc;
   cursor: pointer;
-  color: #4fc3f7 !important; /* Rick - azul claro */
-  transition: transform 0.2s, color 0.3s;
+  position: absolute;
+  text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+  transition: transform 0.3s ease, color 0.3s ease;
   z-index: 200;
-  text-shadow: 0 0 6px #4fc3f7;
 }
 
 .pin:hover {
-  transform: scale(1.1);
-  color: #81c784 !important; /* Jerry - verde */
-  text-shadow: 0 0 12px #81c784;
+  color: #ff44cc;
+  text-shadow: 0 0 20px #ff44cc, 0 0 40px #ff44cc;
+  transform: scale(1.3);
 }
 
-/* Imágenes dentro de cajas con sombras Rick */
+/* --- CAJAS DE INFORMACION --- */
+[class^="cajafoto"] {
+  background: rgba(45, 0, 90, 0.8);
+  padding: 1.8rem;
+  width: 420px;
+  position: absolute;
+  border-radius: 15px;
+  color: #fff;
+  box-shadow: 0 0 25px #da55ff;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  z-index: 99999;
+  backdrop-filter: blur(8px);
+}
+
+.PinCanada:hover ~ .cajafotoCanada,
+.PinEstadosUnidos:hover ~ .cajafotoEstadosUnidos,
+.PinBrasil:hover ~ .cajafotoBrasil,
+.PinJapon:hover ~ .cajafotoJapon,
+.PinAustralia:hover ~ .cajafotoAustralia,
+.PinChina:hover ~ .cajafotoChina,
+.PinEspana:hover ~ .cajafotoEspana,
+.PinInglaterra:hover ~ .cajafotoInglaterra,
+.PinArgentina:hover ~ .cajafotoArgentina {
+  opacity: 0.95;
+  pointer-events: auto;
+}
+
+/* --- IMAGENES DENTRO DE CAJAS --- */
 [class^="Foto"] img {
   width: 100%;
   height: auto;
-  border-radius: 4px;
-  margin-bottom: 15px;
-  filter: drop-shadow(0 0 6px #4fc3f7);
+  border-radius: 8px;
+  margin-bottom: 12px;
+  filter: drop-shadow(0 0 15px #fff244);
 }
 
+/* --- TEXTO DENTRO DE CAJAS --- */
 [class^="Texto"] {
+  font-size: 0.95rem;
+  color: #b7f0ad;
+  line-height: 1.5;
+  text-shadow: 0 0 5px #45f3a3;
   margin: 0;
-  font-size: 0.9em;
-  line-height: 1.4;
-  color: #0d253f; /* azul oscuro */
-  text-shadow: 0 0 5px #81c784; /* sombra verde Jerry */
 }
 
-/* Posicionamiento pines (igual, sin cambiar) */
+/* --- POSICIONAMIENTO PINES --- */
 .PinCanada { right: 65vw; top: 35vh; }
 .PinEstadosUnidos { right: 55vw; top: 40vh; }
 .PinBrasil { right: 50vw; top: 59vh; }
@@ -162,7 +236,7 @@ body {
 .PinInglaterra { right: 51.5vw; top: 35.5vh; }
 .PinArgentina { left: 31vw; bottom: 30vh; }
 
-/* Posicionamiento cajas (igual) */
+/* --- POSICIONAMIENTO CAJAS --- */
 .cajafotoCanada { right: 60vw; bottom: 30vh; }
 .cajafotoEstadosUnidos { right: 45vw; bottom: 35vh; }
 .cajafotoBrasil { right: 50vw; bottom: 15vh; }
@@ -173,56 +247,58 @@ body {
 .cajafotoInglaterra { right: 35vw; bottom: 25vh; }
 .cajafotoArgentina { right: 40vw; bottom: 10vh; }
 
-/* Hover para mostrar cajas */
-.PinCanada:hover ~ .cajafotoCanada,
-.PinEstadosUnidos:hover ~ .cajafotoEstadosUnidos,
-.PinBrasil:hover ~ .cajafotoBrasil,
-.PinJapon:hover ~ .cajafotoJapon,
-.PinAustralia:hover ~ .cajafotoAustralia,
-.PinChina:hover ~ .cajafotoChina,
-.PinEspana:hover ~ .cajafotoEspana,
-.PinInglaterra:hover ~ .cajafotoInglaterra,
-.PinArgentina:hover ~ .cajafotoArgentina {
-  opacity: 0.9;
-}
-
-/* Font Awesome animaciones */
-.fa-beat-fade {
-  --fa-animation-duration: 2s;
-}
-
-.fa-solid.fa-location-pin.fa-beat-fade {
-  animation-iteration-count: 0;
-}
-
-/* Overlay para textos o secciones */
-#descripcion .position-absolute {
-  background: rgba(229, 115, 115, 0.9); /* rojo Beth */
-  color: #0d253f;
-  text-shadow: none;
-  padding: 1rem;
-  border-radius: 6px;
-  font-weight: 700;
-}
-
-/* Sección demo */
+/* --- SECCION DEMO --- */
 #demo {
-  background-color: #1976d2; /* azul Rick medio */
-  color: #ffeb3b; /* Morty amarillo */
-  text-shadow: 0 0 8px #ffeb3b;
-  padding: 2rem 1rem;
-  border-radius: 8px;
-  margin-top: 1rem;
+  background: #23004e;
+  color: #fff244;
+  text-shadow: 0 0 10px #fff244;
+  padding: 2rem 1.5rem;
+  border-radius: 18px;
+  box-shadow: 0 0 40px #da55ff;
+  margin-top: 1.5rem;
 }
 
 #demo .btn-success {
-  background-color: #81c784; /* Jerry */
-  box-shadow: 0 0 15px #81c784;
+  background: linear-gradient(135deg, #45f3a3, #00ffb9);
+  box-shadow: 0 0 25px #00ffb9;
   border: none;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 #demo .btn-success:hover {
-  background-color: #a5d6a7;
-  box-shadow: 0 0 22px #a5d6a7;
+  background: linear-gradient(135deg, #00ffb9, #45f3a3);
+  box-shadow: 0 0 40px #00ffb9;
 }
+
+/* --- SECCION PERSONAJES --- */
+#personajes {
+  background: linear-gradient(135deg, #000000, #23004e);
+  padding: 3rem 2rem;
+  border-radius: 25px;
+  box-shadow: 0 0 60px #da55ff;
+  color: #b7f0ad;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* --- CAROUSEL DE PERSONAJES MÁS VISTOSO --- */
+#personajes .carousel {
+  background: #000;
+  border-radius: 25px;
+  padding: 2rem 1rem 3rem;
+  box-shadow: 0 0 70px #da55ff, 0 0 30px #45f3a3 inset;
+  transition: box-shadow 0.4s ease;
+}
+
+#personajes .carousel:hover {
+  box-shadow: 0 0 90px #fff244, 0 0 50px #00ffb9 inset;
+}
+
+#personajes .carousel-item {
+  text-align: center;
+  color: #b7f0ad;
+}
+
+#personajes .carousel-item img {
+  max-width: 280px;
+  border-radius: 20px;
+  box-shadow: 0 0}
