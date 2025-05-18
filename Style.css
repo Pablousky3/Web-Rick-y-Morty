@@ -204,7 +204,7 @@ body {
 .PinInglaterra:hover ~ .cajafotoInglaterra,
 .PinArgentina:hover ~ .cajafotoArgentina {
   opacity: 0.95;
-  pointer-events: auto;
+  /* pointer-events: auto; */
 }
 
 /* --- IMAGENES DENTRO DE CAJAS --- */
@@ -246,6 +246,15 @@ body {
 .cajafotoEspana { right: 29vw; bottom: 18vh; }
 .cajafotoInglaterra { right: 35vw; bottom: 25vh; }
 .cajafotoArgentina { right: 40vw; bottom: 10vh; }
+
+/* Animación Font Awesome */
+ .fa-beat-fade {
+    --fa-animation-duration: 1.5s;
+} 
+
+.fa-solid.fa-location-pin.fa-beat-fade{
+    animation-iteration-count: 0;
+}
 
 /* --- SECCION DEMO --- */
 #demo {

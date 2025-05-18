@@ -21,3 +21,4 @@ $(".pin").mouseleave(function(){
     $(".Pin"+ country +".fa-solid.fa-location-pin.fa-beat-fade").css("animation-iteration-count", "0")
     $(".Foto"+ country +" img").css("opacity", "0%")
     $(".Texto"+ country).css("opacity", "0%")
+})
