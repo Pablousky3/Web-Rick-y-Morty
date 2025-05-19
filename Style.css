@@ -5,6 +5,7 @@ body {
   color: #b7f0ad; /* verde claro neón suave (tipo Rick) */
   margin: 0;
   padding: 0;
+  cursor: url('media/images/Nave.png') 16 16, auto;
 }
 
 /* --- NOMBRES DE PERSONAJES --- */
@@ -55,6 +56,19 @@ body {
 .nav-link:hover {
   color: #da55ff;
   text-decoration: underline wavy #da55ff;
+}
+
+/* --- Zona del logo con parallax --- */
+.zona-logo {
+  background-image: url('media/images/Fondo.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* --- CAROUSEL GENERAL --- */
