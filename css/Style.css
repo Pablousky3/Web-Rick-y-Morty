@@ -1,10 +1,17 @@
 /* --- BASE Y BODY --- */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #121212; /* fondo negro intenso para contraste neón */
   color: #b7f0ad; /* verde claro neón suave (tipo Rick) */
   margin: 0;
   padding: 0;
+  cursor: url('media/images/Nave.png') 16 16, auto;
 }
 
 /* --- NOMBRES DE PERSONAJES --- */
@@ -45,16 +52,50 @@ body {
 
 /* --- NAV LINKS --- */
 .nav-link {
+  position: relative;
+  overflow: hidden;
   color: #fff244;
   font-weight: 700;
   transition: color 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 1.2px;
+  display: inline-block;
+  padding-bottom: 5px;
 }
 
-.nav-link:hover {
-  color: #da55ff;
-  text-decoration: underline wavy #da55ff;
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #da55ff;
+  transition: width 0.4s ease;
+  z-index: 1;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-link.active {
+  color: #fff244 !important;
+}
+
+/* --- Zona del logo con parallax --- */
+.zona-logo {
+  background-image: url('media/images/Fondo.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* --- CAROUSEL GENERAL --- */
@@ -108,6 +149,24 @@ body {
 }
 
 /* --- BOTONES --- */
+
+.btn-primary {
+  background: linear-gradient(135deg, #00ffb9, #45f3a3);
+  border: none;
+  font-weight: 900;
+  font-size: 1.2rem;
+  padding: 0.8rem 2.5rem;
+  color: #121212;
+  box-shadow: 0 0 25px #00ffb9;
+  transition: all 0.4s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #45f3a3, #00ffb9);
+  box-shadow: 0 0 40px #45f3a3;
+  color: #000;
+}
+
 .btn-success {
   background: linear-gradient(135deg, #45f3a3, #00ffb9);
   border: none;
