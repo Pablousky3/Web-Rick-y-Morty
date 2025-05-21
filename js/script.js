@@ -2,9 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("info-form");
   const alertBox = document.getElementById("form-alert");
 
-  form.addEventListener("submit", function (e) {
+  form?.addEventListener("submit", function (e) {
     e.preventDefault();
-
     const email = document.getElementById("email");
     const name = document.getElementById("name");
     const surname = document.getElementById("surname");
@@ -49,28 +48,34 @@ document.addEventListener("DOMContentLoaded", function () {
     $(".Texto" + planet).css("opacity", "0%");
   });
 
-  // Scroll suave
-  const navLinks = document.querySelectorAll(".nav-link");
-  document.querySelectorAll('a.nav-link[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+  // Scroll suave con efecto portal
+  document.querySelectorAll('a.nav-link[href^="#"]').forEach(link => {
+    link.addEventListener("click", function (e) {
       e.preventDefault();
-      navLinks.forEach(link => link.classList.remove('active'));
-      const targetId = this.getAttribute('href');
+      const targetId = this.getAttribute("href");
       const target = document.querySelector(targetId);
+      const portal = document.getElementById("portal-transition");
 
-      if (target) {
-        const offset = 70;
-        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+      if (portal && target) {
+        portal.classList.add("active");
 
-        window.scrollTo({
-          top: targetPosition,
-          behavior: 'smooth'
-        });
+        setTimeout(() => {
+          const offset = 70;
+          const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({ top: targetPosition, behavior: "smooth" });
+        }, 500); // espera un poco más antes de hacer scroll
+
+        setTimeout(() => {
+          portal.classList.remove("active");
+        }, 1000); // desactiva el portal después de 1s
       }
     });
   });
 
+  
+
   // Scrollspy personalizado
+  const navLinks = document.querySelectorAll(".nav-link");
   const sections = document.querySelectorAll("section[id]");
   window.addEventListener("scroll", () => {
     let current = "";
@@ -89,4 +94,17 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  // Efecto de partículas del cursor
+  document.addEventListener("mousemove", function (e) {
+    const particle = document.createElement("div");
+    particle.className = "cursor-particle";
+    particle.style.left = `${e.clientX}px`;
+    particle.style.top = `${e.clientY}px`;
+    document.body.appendChild(particle);
+    setTimeout(() => {
+      particle.remove();
+    }, 1000);
+  });
 });
+

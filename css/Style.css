@@ -6,7 +6,7 @@ header {
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Bungee', cursive, sans-serif;
   background: #121212; /* fondo negro intenso para contraste neón */
   color: #b7f0ad; /* verde claro neón suave (tipo Rick) */
   margin: 0;
@@ -196,7 +196,7 @@ body {
 }
 
 .h1mapa {
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-family: 'Bungee', cursive, sans-serif;
   font-weight: 700;
   font-size: 3rem;
   color: #fff244;
@@ -357,7 +357,7 @@ body {
   border-radius: 25px;
   box-shadow: 0 0 60px #da55ff;
   color: #b7f0ad;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Bungee', cursive, sans-serif;
 }
 
 /* --- CAROUSEL DE PERSONAJES MÁS VISTOSO --- */
@@ -384,7 +384,7 @@ body {
   box-shadow: 0 0
 }
 
-  
+/* --- Estilo caja de avisos --- */
 #form-alert {
   background-color: #00d2ff;
   color: white;
@@ -393,6 +393,85 @@ body {
   border: none;
   transition: all 0.4s ease;
 }
+/* --- Efectos del cursosr --- */
+.cursor-particle {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #45f3a2c7 0%, #00ffbb53 100%);
+  pointer-events: none;
+  animation: particle-fade 0.5s ease-out forwards;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes particle-fade {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(2);
+  }
+}
+/* --- Efecto portal en landing--- */
+#portal-transition {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: url('../media/images/portal.gif') center center no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  opacity: 0;
+  transition: all 0.6s ease-out;
+}
+
+#portal-transition.active {
+  width: 200vw;
+  height: 200vw;
+  opacity: 1;
+}
+
+/* Pantalla de carga con animación tipo portal */
+#portal-loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: url('../media/images/portal.gif') center center no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+  opacity: 0;
+  transition: width 0.8s ease, height 0.8s ease, opacity 0.8s ease;
+
+}
+
+#portal-loader.portal-open {
+  width: 200vw;
+  height: 200vw;
+  opacity: 1;
+}
+
+#portal-loader.portal-close {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  transition: all 2s ease-in;
+}
+
+
+
+
+
 
 
 
