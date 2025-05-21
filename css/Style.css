@@ -265,15 +265,15 @@ body {
   backdrop-filter: blur(8px);
 }
 
-.PinCanada:hover ~ .cajafotoCanada,
-.PinEstadosUnidos:hover ~ .cajafotoEstadosUnidos,
-.PinBrasil:hover ~ .cajafotoBrasil,
-.PinJapon:hover ~ .cajafotoJapon,
-.PinAustralia:hover ~ .cajafotoAustralia,
-.PinChina:hover ~ .cajafotoChina,
-.PinEspana:hover ~ .cajafotoEspana,
-.PinInglaterra:hover ~ .cajafotoInglaterra,
-.PinArgentina:hover ~ .cajafotoArgentina {
+.PinTierra:hover ~ .cajafotoTierra,
+.PinCiudadelaDeRicks:hover ~ .cajafotoCiudadelaDeRicks,
+.PinGuaridaDeWorlender:hover ~ .cajafotoGuaridaDeWorlender,
+.PinTierraPostApocaliptica:hover ~ .cajafotoTierraPostApocaliptica,
+.PinPlanetaPurga:hover ~ .cajafotoPlanetaPurga,
+.PinVenzenulon7:hover ~ .cajafotoVenzenulon7,
+.PinNuptia4:hover ~ .cajafotoNuptia4,
+.PinHospitalDeStGloppyNoops:hover ~ .cajafotoHospitalDeStGloppyNoops,
+.PinTierraDeRepuesto:hover ~ .cajafotoTierraDeRepuesto {
   opacity: 0.95;
   /* pointer-events: auto; */
 }
@@ -297,26 +297,26 @@ body {
 }
 
 /* --- POSICIONAMIENTO PINES --- */
-.PinCanada { right: 75vw; top: 20vh; }
-.PinEstadosUnidos { right: 85vw; top: 40vh; }
-.PinBrasil { right: 70vw; top: 60vh; }
-.PinJapon { right: 44vw; top: 62vh; }
-.PinAustralia { right: 10vw; bottom: 25vh; }
-.PinChina { right: 25vw; top: 33vh; }
-.PinEspana { left: 38vw; bottom: 55vh; }
-.PinInglaterra { right: 45vw; top: 15vh; }
- .PinArgentina { right: 25vw; top: 20vh; } 
+.PinTierra { right: 75vw; top: 20vh; }
+.PinCiudadelaDeRicks { right: 85vw; top: 40vh; }
+.PinGuaridaDeWorlender { right: 70vw; top: 60vh; }
+.PinTierraPostApocaliptica { right: 44vw; top: 62vh; }
+.PinPlanetaPurga { right: 10vw; bottom: 25vh; }
+.PinVenzenulon7 { right: 25vw; top: 33vh; }
+.PinNuptia4 { left: 38vw; bottom: 55vh; }
+.PinHospitalDeStGloppyNoops { right: 45vw; top: 15vh; }
+ .PinTierraDeRepuesto { right: 25vw; top: 20vh; } 
 
 /* --- POSICIONAMIENTO CAJAS --- */
-.cajafotoCanada { right: 45vw; bottom: 30vh; }
-.cajafotoEstadosUnidos { right: 55vw; bottom: 30vh; }
-.cajafotoBrasil { right: 38vw; bottom: 12vh; }
-.cajafotoJapon { right: 50vw; bottom: 10vh; }
-.cajafotoAustralia { right: 20vw; bottom: 15vh; }
-.cajafotoChina { right: 30vw; bottom: 25vh; }
-.cajafotoEspana { right: 25vw; bottom: 30vh; }
-.cajafotoInglaterra { right: 52vw; bottom: 25vh; }
-.cajafotoArgentina {  right: 32vw; bottom: 10vh; }
+.cajafotoTierra { right: 45vw; bottom: 30vh; }
+.cajafotoCiudadelaDeRicks { right: 55vw; bottom: 30vh; }
+.cajafotoGuaridaDeWorlender { right: 38vw; bottom: 12vh; }
+.cajafotoTierraPostApocaliptica { right: 50vw; bottom: 10vh; }
+.cajafotoPlanetaPurga { right: 20vw; bottom: 15vh; }
+.cajafotoVenzenulon7 { right: 30vw; bottom: 25vh; }
+.cajafotoNuptia4{ right: 25vw; bottom: 30vh; }
+.cajafotoHospitalDeStGloppyNoops { right: 52vw; bottom: 25vh; }
+.cajafotoTierraDeRepuesto {  right: 32vw; bottom: 10vh; }
 
 /* Animación Font Awesome */
  .fa-beat-fade {
