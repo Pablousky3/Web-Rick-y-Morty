@@ -1,44 +1,6 @@
-<<<<<<< Updated upstream:js/Scripts.js
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("info-form");
   const alertBox = document.getElementById("form-alert");
-=======
-$(document).ready(function(){
-  const planets = [
-    $("#PinCanada"), 
-    $("#PinEstadosUnidos"), 
-    $("#PinBrasil"), 
-    $("#PinJapon"),
-    $("#PinAustralia"), 
-    $("#PinChina"), 
-    $("#PinEspana"), 
-    $("#PinInglaterra"), 
-    $("#PinArgentina")
-  ];
-  
-    fetch("https://rickandmortyapi.com/api/location/1,3,4,8,9,10,13,16,20")
-    .then(function(response)
-    {
-        return response.json();
-    })
-    .then(function(result)
-    {
-        console.log(result);
-        let planets = result.data;
-
-        planets.forEach(function(planet) 
-        {
-            let link = document.createElement('a');
-            link.href = 'game.html?id=' + planet.id;
-            gamesListCont.append(link);
-        });
-    })
-    .catch(function(err)
-    {
-        console.log(err);
-    })
-});
->>>>>>> Stashed changes:js/script.js
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();

@@ -11,7 +11,7 @@ body {
   color: #b7f0ad; /* verde claro neón suave (tipo Rick) */
   margin: 0;
   padding: 0;
-  cursor: url('media/images/Nave.png') 16 16, auto;
+  cursor: url('../media/images/Nave.png') 16 16, auto;
 }
 
 /* --- NOMBRES DE PERSONAJES --- */
@@ -238,7 +238,10 @@ body {
 }
 
 .pin a {
-  opacity: 0;
+  position: absolute;
+  right: 0.25px;
+  height: 40px;
+  width: 30px;
 }
 
 /* --- CAJAS DE INFORMACION --- */
