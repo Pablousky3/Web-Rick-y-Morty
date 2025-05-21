@@ -34,18 +34,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Interacción con pines
   $(".pin").mouseenter(function () {
-    let country = $(this).data("country");
-    $(".Pin" + country + ".fa-solid.fa-location-pin.fa-beat-fade").css("animation-iteration-count", "infinite");
-    $(".Foto" + country + " img").css("opacity", "100%");
-    $(".Texto" + country).css("opacity", "100%");
-    $(".caja-foto" + country).css("opacity", "100");
+    let planet = $(this).data("planet");
+    $(".Pin" + planet + ".fa-solid.fa-location-pin.fa-beat-fade").css("animation-iteration-count", "infinite");
+    $(".Foto" + planet + " img").css("opacity", "100%");
+    $(".Texto" + planet).css("opacity", "100%");
+    $(".caja-foto" + planet).css("opacity", "100");
   });
 
   $(".pin").mouseleave(function () {
-    let country = $(this).data("country");
-    $(".Pin" + country + ".fa-solid.fa-location-pin.fa-beat-fade").css("animation-iteration-count", "0");
-    $(".Foto" + country + " img").css("opacity", "0%");
-    $(".Texto" + country).css("opacity", "0%");
+    let planet = $(this).data("planet");
+    $(".Pin" + planet + ".fa-solid.fa-location-pin.fa-beat-fade").css("animation-iteration-count", "0");
+    $(".Foto" + planet + " img").css("opacity", "0%");
+    $(".Texto" + planet).css("opacity", "0%");
   });
 
   // Scroll suave con efecto portal
