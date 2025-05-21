@@ -7,7 +7,10 @@ header {
 
 body {
   font-family: 'Bungee', cursive, sans-serif;
-  background: #121212; /* fondo negro intenso para contraste neón */
+   background-image: url('../media/images/espaciobg.webp');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
   color: #b7f0ad; /* verde claro neón suave (tipo Rick) */
   margin: 0;
   padding: 0;
@@ -16,38 +19,58 @@ body {
 
 /* --- NOMBRES DE PERSONAJES --- */
 .name-rick {
-  color: #45f3a3; /* verde neón brillante Rick */
+  color: #b0e0e6 !important;
   font-weight: 900;
-  text-shadow: 0 0 10px #45f3a3, 0 0 30px #45f3a3;
   letter-spacing: 1.3px;
+  background-image: url('../media/images/tabla.webp');
+  background-size: cover;
+  background-position: center;
+  padding: 0 6px;
+  display: inline-block;
 }
 
 .name-morty {
-  color: #fff244; /* amarillo vibrante Morty */
+  color: #fff244 !important;
   font-weight: 900;
-  text-shadow: 0 0 12px #fff244, 0 0 30px #fff244;
   letter-spacing: 1.2px;
+  background-image: url('../media/images/tabla.webp');
+  background-size: cover;
+  background-position: center;
+  padding: 0 6px;
+  display: inline-block;
 }
 
 .name-summer {
-  color: #da55ff; /* morado vibrante Summer */
+  color: #f07d54 !important;
   font-weight: 900;
-  text-shadow: 0 0 12px #da55ff, 0 0 30px #da55ff;
   letter-spacing: 1.2px;
+  background-image: url('../media/images/tabla.webp');
+  background-size: cover;
+  background-position: center;
+  padding: 0 6px;
+  display: inline-block;
 }
 
 .name-jerry {
-  color: #ff6e6e; /* rojo suave Jerry */
+  color: #8fbf7f !important;
   font-weight: 900;
-  text-shadow: 0 0 10px #ff6e6e, 0 0 25px #ff6e6e;
   letter-spacing: 1.1px;
+  background-image: url('../media/images/tabla.webp');
+  background-size: cover;
+  background-position: center;
+  padding: 0 6px;
+  display: inline-block;
 }
 
 .name-beth {
-  color: #00d2ff; /* azul eléctrico Beth */
+  color: #ff5a5f !important;
   font-weight: 900;
-  text-shadow: 0 0 10px #00d2ff, 0 0 30px #00d2ff;
   letter-spacing: 1.2px;
+  background-image: url('../media/images/tabla.webp');
+  background-size: cover;
+  background-position: center;
+  padding: 0 6px;
+  display: inline-block;
 }
 
 /* --- NAV LINKS --- */
@@ -107,8 +130,9 @@ body {
 .carousel {
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 0 40px 8px #45f3a3;
-  background: #1a1a1a;
+  background-image: url('../media/images/navebg.jpg');
+  background-size: cover;
+  background-position: center;
   padding: 15px;
   margin-bottom: 3rem;
 }
@@ -120,7 +144,6 @@ body {
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  filter: drop-shadow(0 0 5px #fff244);
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -128,27 +151,22 @@ body {
 .carousel-control-next-icon:hover {
   background-color: #da55ff; /* morado Summer */
   transform: scale(1.2);
-  filter: drop-shadow(0 0 15px #da55ff);
 }
 
 /* --- CAROUSEL INDICATORS --- */
 .carousel-indicators [data-bs-target] {
   background-color: #fff244;
   opacity: 0.8;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .carousel-indicators .active {
   background-color: #da55ff;
-  box-shadow: 0 0 15px #da55ff;
 }
 
 /* --- CAROUSEL TITULOS --- */
 .carousel-item h3 {
   font-size: 2.5rem;
   font-weight: 900;
-  color: #45f3a3;
-  text-shadow: 0 0 20px #45f3a3, 0 0 40px #45f3a3;
   margin-top: 0.8rem;
   letter-spacing: 2px;
 }
@@ -162,13 +180,11 @@ body {
   font-size: 1.2rem;
   padding: 0.8rem 2.5rem;
   color: #121212;
-  box-shadow: 0 0 25px #00ffb9;
   transition: all 0.4s ease;
 }
 
 .btn-primary:hover {
   background: linear-gradient(135deg, #45f3a3, #00ffb9);
-  box-shadow: 0 0 40px #45f3a3;
   color: #000;
 }
 
@@ -178,13 +194,10 @@ body {
   font-weight: 900;
   font-size: 1.2rem;
   padding: 0.8rem 2.5rem;
-  box-shadow: 0 0 25px #00ffb9;
-  transition: box-shadow 0.4s ease, background 0.4s ease;
 }
 
 .btn-success:hover {
   background: linear-gradient(135deg, #00ffb9, #45f3a3);
-  box-shadow: 0 0 40px #00ffb9;
 }
 
 /* --- SECCION MAPAS --- */
@@ -192,7 +205,6 @@ body {
   background: #000000cc; /* negro con transparencia para brillo */
   padding: 2rem 1rem;
   border-radius: 12px;
-  box-shadow: 0 0 30px #da55ffcc;
 }
 
 .h1mapa {
@@ -200,7 +212,6 @@ body {
   font-weight: 700;
   font-size: 3rem;
   color: #fff244;
-  text-shadow: 0 0 15px #fff244;
   margin-bottom: 1rem;
 }
 
@@ -214,7 +225,6 @@ body {
   border-radius: 12px;
   overflow: hidden;
   filter: brightness(0.9);
-  box-shadow: 0 0 25px #45f3a3;
   background: linear-gradient(135deg, #2e003e, #000000);
 }
 
@@ -222,7 +232,6 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: drop-shadow(0 0 15px #fff244);
 }
 
 /* --- PINES DE LOCALIZACION --- */
@@ -231,14 +240,12 @@ body {
   color: #00ffcc;
   cursor: pointer;
   position: absolute;
-  text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
   transition: transform 0.3s ease, color 0.3s ease;
   z-index: 200;
 }
 
 .pin:hover {
   color: #ff44cc;
-  text-shadow: 0 0 20px #ff44cc, 0 0 40px #ff44cc;
   transform: scale(1.3);
 }
 
@@ -257,7 +264,6 @@ body {
   position: absolute;
   border-radius: 15px;
   color: #fff;
-  box-shadow: 0 0 25px #da55ff;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.4s ease;
@@ -284,7 +290,6 @@ body {
   height: auto;
   border-radius: 8px;
   margin-bottom: 12px;
-  filter: drop-shadow(0 0 15px #fff244);
 }
 
 /* --- TEXTO DENTRO DE CAJAS --- */
@@ -292,7 +297,6 @@ body {
   font-size: 0.95rem;
   color: #b7f0ad;
   line-height: 1.5;
-  text-shadow: 0 0 5px #45f3a3;
   margin: 0;
 }
 
@@ -331,23 +335,19 @@ body {
 #demo {
   background: #23004e;
   color: #fff244;
-  text-shadow: 0 0 10px #fff244;
   padding: 2rem 1.5rem;
   border-radius: 18px;
-  box-shadow: 0 0 40px #da55ff;
   margin-top: 1.5rem;
 }
 
 #demo .btn-success {
   background: linear-gradient(135deg, #45f3a3, #00ffb9);
-  box-shadow: 0 0 25px #00ffb9;
   border: none;
   font-weight: 900;
 }
 
 #demo .btn-success:hover {
   background: linear-gradient(135deg, #00ffb9, #45f3a3);
-  box-shadow: 0 0 40px #00ffb9;
 }
 
 /* --- SECCION PERSONAJES --- */
@@ -355,7 +355,6 @@ body {
   background: linear-gradient(135deg, #000000, #23004e);
   padding: 3rem 2rem;
   border-radius: 25px;
-  box-shadow: 0 0 60px #da55ff;
   color: #b7f0ad;
   font-family: 'Bungee', cursive, sans-serif;
 }
@@ -365,13 +364,9 @@ body {
   background: #000;
   border-radius: 25px;
   padding: 2rem 1rem 3rem;
-  box-shadow: 0 0 70px #da55ff, 0 0 30px #45f3a3 inset;
-  transition: box-shadow 0.4s ease;
 }
 
-#personajes .carousel:hover {
-  box-shadow: 0 0 90px #fff244, 0 0 50px #00ffb9 inset;
-}
+
 
 #personajes .carousel-item {
   text-align: center;
@@ -381,7 +376,6 @@ body {
 #personajes .carousel-item img {
   max-width: 280px;
   border-radius: 20px;
-  box-shadow: 0 0
 }
 
 /* --- Estilo caja de avisos --- */
@@ -389,7 +383,6 @@ body {
   background-color: #00d2ff;
   color: white;
   font-weight: bold;
-  box-shadow: 0 0 20px #00d2ff;
   border: none;
   transition: all 0.4s ease;
 }
