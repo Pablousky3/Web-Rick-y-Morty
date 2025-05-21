@@ -1,14 +1,14 @@
 $(document).ready(function () {
   const pins = [
-    $(".PinCanada"),
-    $(".PinEstadosUnidos"),
-    $(".PinBrasil"),
-    $(".PinJapon"),
-    $(".PinAustralia"),
-    $(".PinChina"),
-    $(".PinEspana"),
-    $(".PinInglaterra"),
-    $(".PinArgentina")
+    $(".PinTierra"),
+    $(".PinCiudadelaDeRicks"),
+    $(".PinGuaridaDeWorlender"),
+    $(".PinTierraPostApocaliptica"),
+    $(".PinPlanetaPurga"),
+    $(".PinVenzenulon7"),
+    $(".PinNuptia4"),
+    $(".PinHospitalDeStGloppyNoops"),
+    $(".PinTierraDeRepuesto")
   ];
 
   fetch("https://rickandmortyapi.com/api/location/1,3,4,8,9,10,13,16,20")
