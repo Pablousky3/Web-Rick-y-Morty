@@ -91,7 +91,7 @@ body {
 
 /* --- Zona del logo con parallax --- */
 .zona-logo {
-  background-image: url('media/images/Fondo.jpg');
+  background-image: url('../media/images/Fondo.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -101,6 +101,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 
 /* --- CAROUSEL GENERAL --- */
 .carousel {
