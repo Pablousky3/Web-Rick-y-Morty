@@ -81,9 +81,13 @@ body {
   width: 100%;
 }
 
+
 .nav-link.active {
   color: #fff244 !important;
+  
 }
+
+
 
 /* --- Zona del logo con parallax --- */
 .zona-logo {
@@ -369,4 +373,19 @@ body {
 #personajes .carousel-item img {
   max-width: 280px;
   border-radius: 20px;
-  box-shadow: 0 0}
+  box-shadow: 0 0
+}
+
+  
+#form-alert {
+  background-color: #00d2ff;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 0 20px #00d2ff;
+  border: none;
+  transition: all 0.4s ease;
+}
+
+
+
+  

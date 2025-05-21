@@ -22,7 +22,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="#descripcion">Descripción</a></li>
-            <li class="nav-item"><a class="nav-link" href="#demo">Demo</a></li>
+            <li class="nav-item"><a class="nav-link" href="#demo">Explora</a></li>
             <li class="nav-item"><a class="nav-link" href="#info">Info</a></li>
           </ul>
         </div>
@@ -81,6 +81,8 @@
     </div>
   </section>
 
+  
+
   <!-- Botón de demo -->
   <section id="demo" class="text-center py-5 bg-dark text-white">
     <h2>¡Explora el universo intergalactico!</h2>
@@ -88,44 +90,41 @@
   </section>
 
   <!-- Formulario -->
-  <section id="info" class="container py-5">
-    <h2 class="text-center mb-4">Únete a nuestra demo privada</h2>
-    <form id="info-form" class="row g-3">
-      <div class="col-md-6">
-        <label for="email" class="form-label">Correo Electrónico:</label>
-        <input type="email" class="form-control" id="email" required />
-      </div>
-      <div class="col-md-6">
-        <label for="name" class="form-label">Nombre:</label>
-        <input type="text" class="form-control" id="name" required />
-      </div>
-      <div class="col-md-6">
-        <label for="surname" class="form-label">Apellido:</label>
-        <input type="text" class="form-control" id="surname" required />
-      </div>
-      
-        <div class="col-md-6">
-          <label for="age" class="form-label">Edad:</label>
-          <select class="form-select" id="age" required>
-            <option value="">Selecciona tu edad</option>
-            <option value="18-25">18-25</option>
-            <option value="26-35">26-35</option>
-            <option value="36-45">36-45</option>
-            <option value="46-55">46-55</option>
-            <option value="56+">56+</option>
-          </select>
-        </div>
-        <div class="col-12 text-center">
-          <button type="submit" class="btn btn-primary">Enviar</button>
-        </div>
+ <section id="info" class="container py-5">
+  <h2 class="text-center mb-4">Únete a nuestra demo privada</h2>
+  <form id="info-form" class="row g-3" novalidate>
+    <div class="col-md-6">
+      <label for="email" class="form-label">Correo Electrónico:</label>
+      <input type="email" class="form-control" id="email"/>
+    </div>
+    <div class="col-md-6">
+      <label for="name" class="form-label">Nombre:</label>
+      <input type="text" class="form-control" id="name"/>
+    </div>
+    <div class="col-md-6">
+      <label for="surname" class="form-label">Apellido:</label>
+      <input type="text" class="form-control" id="surname"/>
+    </div>
+    <div class="col-md-6">
+      <label for="age" class="form-label">Edad:</label>
+      <select class="form-select" id="age">
+        <option value="">Selecciona tu edad</option>
+        <option value="18-25">18-25</option>
+        <option value="26-35">26-35</option>
+        <option value="36-45">36-45</option>
+        <option value="46-55">46-55</option>
+        <option value="56+">56+</option>
+      </select>
+    </div>
+    <div class="col-12 text-center">
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+  </form>
 
-    </form>
-    
-    <div id="form-alert" class="alert alert-success mt-4 text-center d-none" role="alert">
-      ¡Gracias por unirte a la demo de Rick y Morty!
+  <div id="form-alert" class="alert alert-success mt-4 text-center d-none" role="alert">
+    ¡Gracias por unirte a la demo de Rick y Morty!
   </div>
-
-  </section>
+</section>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="Scripts.js"></script>

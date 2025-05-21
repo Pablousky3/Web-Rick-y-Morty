@@ -4,7 +4,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
+
+    const email = document.getElementById("email");
+    const name = document.getElementById("name");
+    const surname = document.getElementById("surname");
+    const age = document.getElementById("age");
+
+    if (!email.value || !name.value || !surname.value || !age.value) {
+      alertBox.classList.remove("d-none");
+      alertBox.classList.remove("alert-success");
+      alertBox.classList.add("alert-danger");
+      alertBox.innerText = "¡Morty, completa todos los campos o el universo colapsará!";
+      alertBox.scrollIntoView({ behavior: "smooth", block: "center" });
+      setTimeout(() => {
+        alertBox.classList.add("d-none");
+      }, 5000);
+      return;
+    }
+
     alertBox.classList.remove("d-none");
+    alertBox.classList.remove("alert-danger");
+    alertBox.classList.add("alert-success");
+    alertBox.innerText = "¡Gracias por unirte a la demo de Rick y Morty!";
+    alertBox.scrollIntoView({ behavior: "smooth", block: "center" });
     form.reset();
     setTimeout(() => {
       alertBox.classList.add("d-none");
@@ -28,14 +50,16 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Scroll suave
+  const navLinks = document.querySelectorAll(".nav-link");
   document.querySelectorAll('a.nav-link[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
+      navLinks.forEach(link => link.classList.remove('active'));
       const targetId = this.getAttribute('href');
       const target = document.querySelector(targetId);
 
       if (target) {
-        const offset = 70; // altura de la navbar
+        const offset = 70;
         const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
 
         window.scrollTo({
@@ -46,15 +70,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-
   // Scrollspy personalizado
   const sections = document.querySelectorAll("section[id]");
-  const navLinks = document.querySelectorAll(".nav-link");
-
   window.addEventListener("scroll", () => {
     let current = "";
     const scrollY = window.pageYOffset;
-
     sections.forEach(section => {
       const sectionTop = section.offsetTop - 80;
       const sectionHeight = section.offsetHeight;
@@ -62,7 +82,6 @@ document.addEventListener("DOMContentLoaded", function () {
         current = section.getAttribute("id");
       }
     });
-
     navLinks.forEach(link => {
       link.classList.remove("active");
       if (link.getAttribute("href") === `#${current}`) {
