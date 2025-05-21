@@ -269,7 +269,8 @@ body {
 .PinVenzenulon7:hover ~ .cajafotoVenzenulon7,
 .PinNuptia4:hover ~ .cajafotoNuptia4,
 .PinHospitalDeStGloppyNoops:hover ~ .cajafotoHospitalDeStGloppyNoops,
-.PinTierraDeRepuesto:hover ~ .cajafotoTierraDeRepuesto {
+.PinTierraDeRepuesto:hover ~ .cajafotoTierraDeRepuesto,
+.PinVueltaMenu:hover ~ .cajafotoVueltaMenu {
   opacity: 0.95;
   /* pointer-events: auto; */
 }
@@ -300,6 +301,7 @@ body {
 .PinNuptia4 { height:70px; width:100px;left: 38vw; bottom: 55vh; }
 .PinHospitalDeStGloppyNoops {height:70px; width:100px; right: 35vw; top: 15vh; }
 .PinTierraDeRepuesto { height:100px; width:100px; right: 10vw; top: 10vh; } 
+.PinVueltaMenu{ height:100px; width:100px; left: 3vw; top: 68vh; } 
 
 /* --- POSICIONAMIENTO CAJAS --- */
 .cajafotoTierra { right: 45vw; bottom: 30vh; }
@@ -311,17 +313,18 @@ body {
 .cajafotoNuptia4{ right: 25vw; bottom: 30vh; }
 .cajafotoHospitalDeStGloppyNoops { right: 42vw; bottom: 25vh; }
 .cajafotoTierraDeRepuesto {  right: 20vw; bottom: 10vh; }
+.cajafotoVueltaMenu {  left: 20vw; bottom: 10vh; }
 
-.boton-volver-casa{
+/* .boton-volver-casa{
   /* height:70%;
-  background: linear-gradient(135deg, #00ffb9, #45f3a3); */
+  background: linear-gradient(135deg, #00ffb9, #45f3a3); 
   border: none;
   font-weight: 900;
   font-size: 1.2rem;
   padding: 0.6rem 50rem;
   color: #121212;
   transition: all 0.4s ease;
-}
+} */
 /* Animación Font Awesome */
  .fa-beat-fade {
     --fa-animation-duration: 1.5s;
