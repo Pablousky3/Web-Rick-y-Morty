@@ -6,7 +6,7 @@ header {
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Bungee', cursive, sans-serif;
   background: #121212; /* fondo negro intenso para contraste neón */
   color: #b7f0ad; /* verde claro neón suave (tipo Rick) */
   margin: 0;
@@ -196,7 +196,7 @@ body {
 }
 
 .h1mapa {
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-family: 'Bungee', cursive, sans-serif;
   font-weight: 700;
   font-size: 3rem;
   color: #fff244;
@@ -357,7 +357,7 @@ body {
   border-radius: 25px;
   box-shadow: 0 0 60px #da55ff;
   color: #b7f0ad;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Bungee', cursive, sans-serif;
 }
 
 /* --- CAROUSEL DE PERSONAJES MÁS VISTOSO --- */
