@@ -7,7 +7,7 @@ header {
 
 body {
   font-family: 'Bungee', cursive, sans-serif;
-   background-image: url('../media/images/espaciobg.webp');
+   background-image: url('../media/images/galaxianueva.png');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -22,9 +22,7 @@ body {
   color: #b0e0e6 !important;
   font-weight: 900;
   letter-spacing: 1.3px;
-  background-image: url('../media/images/tabla.webp');
-  background-size: cover;
-  background-position: center;
+  background-color: black;
   padding: 0 6px;
   display: inline-block;
 }
@@ -33,9 +31,7 @@ body {
   color: #fff244 !important;
   font-weight: 900;
   letter-spacing: 1.2px;
-  background-image: url('../media/images/tabla.webp');
-  background-size: cover;
-  background-position: center;
+  background-color: black;
   padding: 0 6px;
   display: inline-block;
 }
@@ -44,9 +40,7 @@ body {
   color: #f07d54 !important;
   font-weight: 900;
   letter-spacing: 1.2px;
-  background-image: url('../media/images/tabla.webp');
-  background-size: cover;
-  background-position: center;
+  background-color: black;
   padding: 0 6px;
   display: inline-block;
 }
@@ -55,9 +49,7 @@ body {
   color: #8fbf7f !important;
   font-weight: 900;
   letter-spacing: 1.1px;
-  background-image: url('../media/images/tabla.webp');
-  background-size: cover;
-  background-position: center;
+  background-color: black;
   padding: 0 6px;
   display: inline-block;
 }
@@ -66,9 +58,7 @@ body {
   color: #ff5a5f !important;
   font-weight: 900;
   letter-spacing: 1.2px;
-  background-image: url('../media/images/tabla.webp');
-  background-size: cover;
-  background-position: center;
+  background-color: black;
   padding: 0 6px;
   display: inline-block;
 }
