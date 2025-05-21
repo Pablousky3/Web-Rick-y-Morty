@@ -247,7 +247,7 @@ body {
   right: 0.25px;
   height: 40px;
   width: 30px;
-}
+} 
 
 /* --- CAJAS DE INFORMACION --- */
 [class^="cajafoto"] {
@@ -297,15 +297,15 @@ body {
 }
 
 /* --- POSICIONAMIENTO PINES --- */
-.PinTierra { right: 75vw; top: 20vh; }
-.PinCiudadelaDeRicks { right: 85vw; top: 40vh; }
-.PinGuaridaDeWorlender { right: 70vw; top: 60vh; }
-.PinTierraPostApocaliptica { right: 44vw; top: 62vh; }
-.PinPlanetaPurga { right: 10vw; bottom: 25vh; }
-.PinVenzenulon7 { right: 25vw; top: 33vh; }
-.PinNuptia4 { left: 38vw; bottom: 55vh; }
-.PinHospitalDeStGloppyNoops { right: 45vw; top: 15vh; }
-.PinTierraDeRepuesto { right: 25vw; top: 20vh; } 
+.PinTierra {height:80px; width:100px; right: 75vw; top: 20vh; }
+.PinCiudadelaDeRicks { height:70px; width:100px;right: 85vw; top: 40vh; }
+.PinGuaridaDeWorlender { height:70px; width:100px;right: 70vw; top: 60vh; }
+.PinTierraPostApocaliptica {height:100px; width:100px; right: 44vw; top: 62vh; }
+.PinPlanetaPurga {height:100px; width:100px; right: 10vw; bottom: 25vh; }
+.PinVenzenulon7 { height:80px; width:100px;right: 25vw; top: 33vh; }
+.PinNuptia4 { height:70px; width:100px;left: 38vw; bottom: 55vh; }
+.PinHospitalDeStGloppyNoops {height:70px; width:100px; right: 45vw; top: 15vh; }
+.PinTierraDeRepuesto { height:100px; width:100px; right: 10vw; top: 10vh; } 
 
 /* --- POSICIONAMIENTO CAJAS --- */
 .cajafotoTierra { right: 45vw; bottom: 30vh; }
@@ -316,7 +316,7 @@ body {
 .cajafotoVenzenulon7 { right: 30vw; bottom: 25vh; }
 .cajafotoNuptia4{ right: 25vw; bottom: 30vh; }
 .cajafotoHospitalDeStGloppyNoops { right: 52vw; bottom: 25vh; }
-.cajafotoTierraDeRepuesto {  right: 32vw; bottom: 10vh; }
+.cajafotoTierraDeRepuesto {  right: 20vw; bottom: 10vh; }
 
 /* Animación Font Awesome */
  .fa-beat-fade {
